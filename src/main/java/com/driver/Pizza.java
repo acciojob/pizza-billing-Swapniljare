@@ -28,18 +28,42 @@ public class Pizza {
             this.toppingPrice = 120;
         }
 
-        this.addExtraTopping = false;
-        this.addTakeAway = false;
-        this.isBillCreated = false;
-        this.addExtraTopping = false;
+//        this.addExtraTopping = false;
+//        this.addTakeAway = false;
+//        this.isBillCreated = false;
+//        this.addExtraTopping = false;
 
         this.bill = "Base Price of the Pizza: "+this.price+"\n";
 
     }
 
-    public int getPrice(){
-        return this.price;
+    public void setPrice(int price) {
+        this.price = price;
     }
+
+    public Boolean getVeg() {
+        return isVeg;
+    }
+
+    public void setVeg(Boolean veg) {
+        isVeg = veg;
+    }
+
+    public void setBill(String bill) {
+        this.bill = bill;
+    }
+
+    public int getToppingPrice() {
+        return toppingPrice;
+    }
+
+    public void setToppingPrice(int toppingPrice) {
+        this.toppingPrice = toppingPrice;
+    }
+
+//    public int getPrice(){
+//        return this.price;
+//    }
 
     public void addExtraCheese(){
         // your code goes here
